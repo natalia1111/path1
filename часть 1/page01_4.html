@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Аудиоконтент - НейроДиалог</title>
+<style>
+* {
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+}
+     
+body {
+ font-family: 'Segoe UI', Arial, sans-serif;
+ background: #f5f5f5;
+ min-height: 100vh;
+ padding: 20px;
+}
+       
+.page {
+ display: none; /* Initially hidden */
+ max-width: 1200px;
+ margin: 0 auto;
+}
+        
+.page.active {
+ display: block; /* Show when active */
+}
+     
+.container {
+ border: 3px dashed #7c4dff;
+ border-radius: 20px;
+ padding: 40px;
+ background: white;
+ min-height: 500px;
+}
+
+/* Chat messages styles... */
+.msg-teacher {
+ background: #e8e0f0;
+ border-radius: 15px;
+ padding: 15px 20px;
+ margin-bottom: 15px;
+ max-width: 90%;
+}
+.msg-teacher .label {
+ color: #7c4dff;
+ font-weight: bold;
+}
+       
+.msg-ai {
+ background: #fff3cd;
+ border-radius: 15px;
+ padding: 15px 20px;
+ margin-bottom: 15px;
+ max-width: 90%;
+}
+.msg-ai .label {
+ color: #f5a623;
+ font-weight: bold;
+}
+
+/* Continue button styles... */
+.continue-wrapper {
+ display: flex;
+ justify-content: flex-end;
+ margin-top: 30px;
+}
+
+        /* Add any other styles here */
+    </style>
+    <script>
+        function showPage(pageNumber) {
+            const pages = document.querySelectorAll('.page');
+            pages.forEach(page => {
+                page.classList.remove('active');
+            });
+            document.getElementById('page' + pageNumber).classList.add('active');
+        }
+
+        document.addEventListener("DOMContentLoaded", function() {
+            showPage(4); // Show page 4 on load
+        });
+</script>
+</head>
+<body>
+ 
+<!-- ==================== СТРАНИЦА 4: TTS скриншот биология ==================== -->
+ <div id="page4" class="page">
+     <div class="container">
+       <div class="tts-screenshot">
+            <div class="tts-header">
+              <span class="tts-title">·॥· Бесплатный преобразование текста в речь</span>
+              <span class="tts-links">Donate Blog <span style="background:#00b894;color:white;padding:2px 8px;border-radius:3px;">Test New!</span></span>
+           </div>
+          
+           <div class="tts-subtitle">Функция службы распознавания речи, которая преобразует текст в реалистичную речь.</div>
+            
+          <div class="tts-tabs">
+             <span class="tts-tab" style="color:#00b894;">Текст</span>
+          <span class="tts-tab">SSML</span>
+             </div>
+        
+             <textarea class="tts-textarea">Комменсализм, возникающий в результате трофических связей и основанный на потреблении одним видом остатков пищи другого вида, называется нахлебничеством. Например, мелкие птицы питаются остатками пищи крокодилов, песцы доедают остатки трапезы медведя белого, а птицы-падальщики или гиены питаются остатками пищи крупных хищников (львов, леопардов)</textarea>
+             
+             <div class="tts-stats">Words: 346 | Lines: 1 | Blank Lines: 0</div>
+           
+             <div class="tts-controls">
+              <div class="tts-control-row">
+                    <span class="tts-control-label">Местный</span>
+                    <span class="tts-control-value">Russian (Russia) [ru-RU]</span>
+              </div>
+              <div class="tts-control-row">
+                    <span class="tts-control-label">Голос</span>
+                   <span class="tts-control-value">DmitryNeural(Male)</span>
+                </div>
+              <div class="tts-control-row">
+                    <span class="tts-control-label">Роль</span>
+                  <span class="tts-control-value">Default</span>
+              </div>
+               <div class="tts-control-row">
+               <span class="tts-control-label">Стиль</span>
+                 <span class="tts-control-value">General</span>
+              </div>
+                <div class="tts-control-row">
+                  <span class="tts-control-label">Скорость</span>
+                  <span class="tts-control-value">●───── x1</span>
+                 </div>
+               <div class="tts-control-row">
+                  <span class="tts-control-label">Подача</span>
+                   <span class="tts-control-value">────●─ 1</span>
+               </div>
+             </div>
+           
+           <div class="tts-buttons">
+              <button class="tts-btn green">Играть в ▶</button>
+               <button class="tts-btn blue">Play all ▶</button>
+                <button class="tts-btn green">Скачать ⬇</button>
+           </div>
+           
+            <div style="margin-top: 15px;">
+                <small>предварительная прослушка</small>
+                 <small style="margin-left: 80px;">скачать файл</small>
+         </div>
+       </div>
+       
+        <div class="continue-wrapper">
+            <a href="#" class="continue-btn" onclick="showPage(5); return false;">Продолжение</a>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,41 @@
+<style>
+.block {
+  max-width: 640px;
+  margin: 40px auto;
+  padding: 24px;
+  border-radius: 16px;
+  background: #fff;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+  font-family: system-ui, Arial, sans-serif;
+  text-align: center;
+  border: 2px dashed #7B61FF;
+}
+.icon {
+  font-size: 40px;
+  margin-bottom: 16px;
+}
+h2 {
+  font-size: 22px;
+  color: #7B61FF;
+  margin-bottom: 12px;
+}
+p {
+  font-size: 16px;
+  color: #222;
+  line-height: 1.6;
+  margin-bottom: 24px;
+}
+.btn {
+  display: inline-block;
+  background: #7B61FF;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background 0.3s ease;
+}
+.btn:hover {
+  background: #5A47CC;
+}
+</style>

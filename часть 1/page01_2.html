@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Аудиоконтент - НейроДиалог</title>
+<style>
+* {
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+}
+     
+body {
+ font-family: 'Segoe UI', Arial, sans-serif;
+ background: #f5f5f5;
+ min-height: 100vh;
+ padding: 20px;
+}
+       
+.page {
+ display: none; /* Initially hidden */
+ max-width: 1200px;
+ margin: 0 auto;
+}
+        
+.page.active {
+ display: block; /* Show when active */
+}
+     
+.container {
+ border: 3px dashed #7c4dff;
+ border-radius: 20px;
+ padding: 40px;
+ background: white;
+ min-height: 500px;
+}
+
+/* Chat messages styles... */
+.msg-teacher {
+ background: #e8e0f0;
+ border-radius: 15px;
+ padding: 15px 20px;
+ margin-bottom: 15px;
+ max-width: 90%;
+}
+.msg-teacher .label {
+ color: #7c4dff;
+ font-weight: bold;
+}
+       
+.msg-ai {
+ background: #fff3cd;
+ border-radius: 15px;
+ padding: 15px 20px;
+ margin-bottom: 15px;
+ max-width: 90%;
+}
+.msg-ai .label {
+ color: #f5a623;
+ font-weight: bold;
+}
+
+/* Continue button styles... */
+.continue-wrapper {
+ display: flex;
+ justify-content: flex-end;
+ margin-top: 30px;
+}
+/* Add more styles as needed... */
+
+@media (max-width: 768px) {
+ /* Responsive styles... */
+}
+</style>
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    document.getElementById("page2").classList.add("active"); // Show the page on load
+});
+</script>
+</head>
+<body>
+ 
+<!-- ==================== СТРАНИЦА 2: Диалог биология ==================== -->
+<div id="page2" class="page">
+    <div class="container">
+        <div class="msg-teacher">
+            <span class="label">Учитель:</span> Я делаю слайд-презентацию к уроку по теме "Комменсализм, протокооперация и мутуализм — типы положительных биотических взаимоотношений" и хочу ее озвучить. Как мне это сделать?
+        </div>
+        
+        <div class="msg-ai">
+            <span class="label">ИИ:</span> Отличная идея! Озвучка сделает презентацию более живой и доступной. У тебя есть два варианта: сгенерировать аудиофайлы отдельно и вставить их в слайды или встроить текст в презентацию и использовать сервисы озвучки.
+        </div>
+        
+        <div class="msg-teacher">
+            <span class="label">Учитель:</span> Какой сервис для озвучки текста бесплатный и удобный?
+        </div>
+       
+        <div class="msg-ai">
+            <span class="label">ИИ:</span> Ты можешь попробовать...
+        </div>
+        
+        <div class="continue-wrapper">
+            <a href="page01_3.html"class="continue-btn" onclick="showPage(3); return false;">Продолжение</a>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
